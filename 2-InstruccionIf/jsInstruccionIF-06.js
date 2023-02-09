@@ -15,9 +15,19 @@ function mostrar()
 	//proceso
 	edad = parseInt(edad);
 
-	if(edad <13)
+	if(edad > 17)
 	{
-
+		alert("Es mayor");
+	}else
+	{
+		if(edad < 13)
+		{
+			alert("Es un niño");
+		}
+		else
+		{
+			alert("Es adolecente");
+		}
 	}
 
 
