@@ -17,6 +17,7 @@ function mostrar()
 	{
 		alert("La persona es mayor de edad");
 	}
+	
 
 	
 

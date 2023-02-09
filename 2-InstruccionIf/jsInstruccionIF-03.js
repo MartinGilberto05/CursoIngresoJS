@@ -19,7 +19,10 @@ function mostrar()
 		alert("La persona es mayor de edad");
 	}else
 	{
-		alert("Es un menor de edad");
+		if(edad > -1)
+		{
+			alert("Es un menor de edad");
+		}
 	}
 
 

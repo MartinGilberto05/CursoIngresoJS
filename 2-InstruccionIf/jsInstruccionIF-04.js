@@ -15,6 +15,7 @@ function mostrar()
 	{
 		alert("Es adolescente");
 	}
+	
 
 
 }//FIN DE LA FUNCIÓN
