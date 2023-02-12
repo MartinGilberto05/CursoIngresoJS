@@ -1,4 +1,4 @@
-/*
+/* Martin Gilberto
 Al ingresar una edad solo debemos informar si la persona NO es adolescente.
 */
 

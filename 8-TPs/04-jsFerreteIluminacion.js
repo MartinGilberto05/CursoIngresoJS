@@ -31,66 +31,22 @@ function CalcularPrecio()
 
     cantLamparas = parseInt(cantLamparas);
     //proceso
-    if(cantLamparas > 5) //punto A
+    if(marcaLampara == "ArgentinaLuz") //si marco argentinaluz 
     {
-        DESCUENTO = 50;
+        if(cantLamparas == 5)//con = a 5 cantidades
+        {
+            DESCUENTO = 40; //me da 40% de descuento 
+        }
+        else
+        {
+            DESCUENTO = 30;
+        }
+       
     }
-    else
+    if(cantLamparas > 5)
     {
-        if(cantLamparas == 5) //punto B
-        {
-            if(marcaLampara == "ArgentinaLuz")
-            {
-                DESCUENTO = 40;
-            }
-            else
-            {
-                DESCUENTO = 30;
-            }
-        }
-        else //punto C
-        {
-            if(cantLamparas == 4)
-            {
-                if(marcaLampara == "ArgentinaLuz")
-                {
-                    DESCUENTO = 25;
-                }
-                else
-                {
-                    if(marcaLampara == "FelipeLamparas")
-                    {
-                        DESCUENTO = 25;
-                    }
-                    else
-                    {
-                        DESCUENTO = 20;
-                    }
-                }
-            }
-            else //punto D
-            {
-                if(cantLamparas == 3)
-                {
-                    if(marcaLampara == "ArgentinaLuz")
-                    {
-                        DESCUENTO = 15;
-                    }
-                    else
-                    {
-                        if(cantLamparas == "FelipeLamparas")
-                        {
-                            DESCUENTO = 10;
-                        }
-                        else
-                        {
-                            DESCUENTO = 5;
-                        }
-                    }
-                }
-            }
-        }
-    }
+        DESCUENTO = 50
+    }*/
 
     //realizo calculo de descuentos, costo, 
     precioSinDescuento = cantLamparas * PRECIO_LAMPARA;
@@ -109,14 +65,17 @@ function CalcularPrecio()
     //informo
    document.getElementById("txtIdprecioDescuento").value = precioConDescuento.toFixed(2);
    
-   console.log(`
-    CANT. LAMPARAS: ${cantLamparas}
-    MARCA: ${marcaLampara}
-    DESCUENTO APLICADO: ${DESCUENTO}%
-    PRECIO SIN DESCUENTO: ${precioSinDescuento}
-    PRECIO CON DESCUENTO: ${precioConDescuento}`);
+   console.log(` CANT. LAMPARAS: ${cantLamparas}
+       MARCA: ${marcaLampara}
+       PRECIO CON DESCUENTO: ${precioConDescuento}
+       DESCUENTO APLICADO: ${DESCUENTO}%
+       PRECIO SIN DESCUENTO: ${precioSinDescuento}`);
+
 }
 
 //txtIdCantidad
 // Marca
-//txtIdprecioDescuento
+//txtIdprecioDescuento 
+
+
+   
