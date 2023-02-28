@@ -14,7 +14,8 @@ function mostrar() {
 	horaDelDia = document.getElementById("txtIdHora").value;
 	horaDelDia = parseFloat(horaDelDia);
 	//Proceso
-	switch (horaDelDia) {
+	switch (horaDelDia) 
+	{
 		case 7:
 		case 8:
 		case 9:

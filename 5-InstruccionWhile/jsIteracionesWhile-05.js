@@ -1,12 +1,31 @@
-/*
+/* Martin Gilberto Div. H
 Al presionar el botón pedir un sexo
 'f' para femenino, 'm' para masculino.*/
 function mostrar()
+
 {
-	var sexoIngresado;
-	sexoIngresado = prompt("ingrese f ó m .");
 
+    //Deaclaramos viariables
+    var sexoIngresado;
+	var mensaje;
 
+    //Asignamos valores
+    sexoIngresado = "";
 
-	txtIdSexo.value=sexoIngresado;
-}//FIN DE LA FUNCIÓN
+	//proceso
+    while (sexoIngresado != "f" && sexoIngresado != "m")
+    {
+        sexoIngresado = prompt("INGRESE f O m SEGÚN CORRESPONDA.");
+       
+    }
+	if(sexoIngresado == "f")
+	{
+		mensaje = "FEMENINO";
+	}
+	else
+	{
+		mensaje = "MASCULINO";
+	}
+
+	document.getElementById("txtIdSexo").value = mensaje; 
+}

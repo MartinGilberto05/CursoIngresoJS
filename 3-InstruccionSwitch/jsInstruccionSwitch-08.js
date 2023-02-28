@@ -15,19 +15,13 @@ function mostrar()
 	switch(destinoIngresado)
 	{
 		case "Bariloche":
+		case "Ushuaia":	
 			mensaje = "FRIO";
 		break;
 
 		case "Cataratas":
-			mensaje = "CALOR";
-		break;
-
 		case "Mar del plata":
 			mensaje = "CALOR";
-		break;
-
-		case "Ushuaia":
-			mensaje = "FRIO";
 		break;
 	}
 	

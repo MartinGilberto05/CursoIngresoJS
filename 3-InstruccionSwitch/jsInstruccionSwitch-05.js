@@ -10,7 +10,7 @@ function mostrar()
 	var mensaje;
 //extraer daatos
 horaDelDia = document.getElementById("txtIdHora").value;
-horaDelDia = parseFloat(horaDelDia);
+horaDelDia = parseInt(horaDelDia);
 //proceso
 switch(horaDelDia)
 {
